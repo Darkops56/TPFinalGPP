@@ -55,41 +55,47 @@ DIAPOSITIVA 2: CICLO PDCA (MEJORA CONTINUA EN EL SOFTWARE)
 
 ```
 ================================================================================
-DIAPOSITIVA 3: SEGURIDAD E HIGIENE LABORAL Y EPP
+DIAPOSITIVA 3: SEGURIDAD E HIGIENE LABORAL, CYMAT Y CONTROL DE RIESGOS
 ================================================================================
-[Título]: HIGIENE, SEGURIDAD LABORAL Y ERGONOMÍA INFORMÁTICA
-[Marco Legal]: Ley Nacional 19.587, Dec. 351/79 y Resolución SRT 295/03 (Ergonomía).
+[Título]: SEGURIDAD E HIGIENE: GESTIÓN DE RIESGOS Y CONDICIONES LABORALES (CYMAT)
+[Marco Legal]: Ley 19.587 (SySO), Ley 24.557 (LRT - ART/SRT) y Res. SRT 295/03 (Ergonomía).
 
-[Columnas Comparativas de Riesgos y Controles]
-1. Riesgo Ergonómico / Túnel Carpiano:
-   * Sillas neumáticas regulables, mouse vertical anatómico y Pausas Activas (10 min/hora).
-2. Riesgo Visual (Pantallas PVD):
-   * Regla 20-20-20, iluminación homogénea a 500 lux y paneles mate antirreflejo.
-3. Riesgo Eléctrico:
-   * Zócalos ignífugos, disyuntor de 30 mA, puesta a tierra y matafuegos CO2 (Clase C).
+[Concepto Central: Peligro vs. Riesgo]:
+- Peligro: Fuente intrínseca de daño (ej. cable de 220 V con aislación dañada).
+- Riesgo: Probabilidad de electrocución x Consecuencia grave (R = P x C).
 
-[Elementos de Protección Personal (EPP)]:
-- Lentes con filtro de luz azul, muñequeras ortopédicas y pulseras antiestáticas para hardware.
-- Señalética IRAM 10.005: Pictogramas de Riesgo Eléctrico y Extintor Clase C.
+[Los 6 Factores de Riesgo según CYMAT]:
+1. Ergonómicos: Movimientos repetitivos y postura sedente -> Mouses verticales y pausas activas (10 min/h).
+2. Físicos: Tensión 220 V y fatiga visual (PVD) -> Disyuntor 30 mA, extintor CO2, 500 lux y regla 20-20-20.
+3. Químicos: Vapores de alcohol isopropílico y solventes dieléctricos -> Ventilación y frascos rotulados.
+4. Biológicos: Bacterias en periféricos compartidos -> Limpieza y desinfección periódica.
+5. Psicosociales: Estrés y bloqueo lógico -> Pair Programming y planificación ágil predecible.
+6. Mecánicos: Tropiezos con cables y golpes -> Canalizaciones ignífugas y pasillos despejados (1,60 m).
+
+[Pirámide de Control de 5 Niveles y EPP]:
+- Eliminación y Sustitución -> Ingeniería (zócalos, puesta a tierra) -> Administrativos (pausas) -> EPP (lentes filtro azul, muñequeras, pulsera ESD y calzado dieléctrico).
+- Señalética IRAM 10.005: Advertencia eléctrica, extintor Clase BC y salida de emergencia.
 - Orador: Maycol Alconz (Tiempo: 1:15 min).
 ================================================================================
 ```
 
 ```
 ================================================================================
-DIAPOSITIVA 4: CICLO DE VIDA DEL PRODUCTO (ACV SOFTWARE)
+DIAPOSITIVA 4: CICLO DE VIDA DEL PRODUCTO (ACV Y CADENA DE VALOR)
 ================================================================================
-[Título]: CICLO DE VIDA DEL SOFTWARE (ACV) Y PUNTOS CRÍTICOS
-[Diagrama de Flujo Horizontal con 6 Fases]
-1. Requerimientos -> 2. Arquitectura -> 3. Codificación -> 4. QA/Tests -> 5. Release -> 6. Retiro
+[Título]: CICLO DE VIDA DEL PRODUCTO: CADENA DE VALOR INTEGRAL Y SDLC
+[Mapeo de la Cadena de Valor en 6 Etapas (Hardware + Software)]:
+1. Extracción de materias primas: Silicio, cobre, oro, estaño de PCs y baterías de UPS.
+2. Fabricación de componentes: Hardware externo + Desarrollo Ruby (POO) y gemas.
+3. Ensamblado: Montaje de laboratorio (puestos, UPS, extintor) + Integración y suite RSpec (28 tests).
+4. Distribución: GitHub Releases y paquetes ligeros sin transporte físico ni embalaje plástico.
+5. Uso: Operación fluida (< 2% CPU, 25 MB RAM), compatible con PCs de >10 años (anti-obsolescencia).
+6. Fin de vida útil: Desinstalación limpia, purga de basura digital en la nube y reciclaje RAEE en Puntos Verdes.
 
-[Puntos Críticos de Control (Alarmas Rojas Identificadas)]:
-- Punto Crítico 1 (Diseño): Acoplamiento excesivo en Tienda ("ganas de codear").
-  * Solución: Inyección de dependencias y separación de lógica comercial.
-- Punto Crítico 2 (Testing): Regresiones imprevistas en mecánicas validadas.
-  * Solución: Batería automatizada de tests de regresión con RSpec.
-- Punto Crítico 3 (Operación): Riesgo de corrupción de partidas en carpeta /Data.
-  * Solución: Operaciones transaccionales atómicas y respaldos diarios.
+[Puntos Críticos de Control del Software (SDLC)]:
+- Punto Crítico 1 (Diseño): Acoplamiento en Tienda -> Desacoplamiento con principios SOLID.
+- Punto Crítico 2 (Testing): Regresiones en equipamiento de caña -> Testing automatizado en CI (SimpleCov 88,4%).
+- Punto Crítico 3 (Operación): Corrupción de partidas en /Data -> Guardado atómico transaccional y backups.
 - Orador: Enzo Luna (Tiempo: 1:15 min).
 ================================================================================
 ```
@@ -243,7 +249,8 @@ DIAPOSITIVA 12: MATRIZ LEGAL, PLANIFICACIÓN GANTT Y CONCLUSIONES
 [Matriz Legal Sintética]:
 - Ley 11.723 (Propiedad Intelectual de Software) -> Licencia MIT y autoría compartida.
 - Ley 25.326 (Protección de Datos Personales) -> Privacidad por diseño, guardado local.
-- Ley 19.587 / Res. SRT 295/03 -> Higiene, seguridad y ergonomía obligatoria.
+- Ley 19.587 / Res. SRT 295/03 -> Higiene, seguridad física y ergonomía obligatoria.
+- Ley 24.557 (Riesgos del Trabajo - LRT) -> Aseguramiento obligatorio ART, supervisión SRT y gestión de riesgos.
 - Ley 24.051 (Residuos Peligrosos) -> Entrega de RAEE en Puntos Verdes de CABA.
 - Ley 24.240 (Defensa del Consumidor) -> Transparencia y honestidad con el usuario.
 
