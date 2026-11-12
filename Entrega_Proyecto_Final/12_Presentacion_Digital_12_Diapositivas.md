@@ -84,13 +84,13 @@ DIAPOSITIVA 3: SEGURIDAD E HIGIENE LABORAL, CYMAT Y CONTROL DE RIESGOS
 DIAPOSITIVA 4: CICLO DE VIDA DEL PRODUCTO (ACV Y CADENA DE VALOR)
 ================================================================================
 [Título]: CICLO DE VIDA DEL PRODUCTO: CADENA DE VALOR INTEGRAL Y SDLC
-[Mapeo de la Cadena de Valor en 6 Etapas (Hardware + Software)]:
-1. Extracción de materias primas: Silicio, cobre, oro, estaño de PCs y baterías de UPS.
-2. Fabricación de componentes: Hardware externo + Desarrollo Ruby (POO) y gemas.
+[Mapeo de la Cadena de Valor en 6 Etapas]:
+1. Extracción de materias primas: Silicio, cobre, oro de componentes PC y UPS (impacto indirecto).
+2. Fabricación de componentes: Hardware externo + Desarrollo Ruby (POO). Controles de calidad: RSpec, RuboCop y relación con ISO 9001.
 3. Ensamblado: Montaje de laboratorio (puestos, UPS, extintor) + Integración y suite RSpec (28 tests).
 4. Distribución: GitHub Releases y paquetes ligeros sin transporte físico ni embalaje plástico.
 5. Uso: Operación fluida (< 2% CPU, 25 MB RAM), compatible con PCs de >10 años (anti-obsolescencia).
-6. Fin de vida útil: Desinstalación limpia, purga de basura digital en la nube y reciclaje RAEE en Puntos Verdes.
+6. Fin de vida útil: Desinstalación limpia, purga digital y disposición de RAEE en Puntos Verdes (articulado con ISO 14001).
 
 [Puntos Críticos de Control del Software (SDLC)]:
 - Punto Crítico 1 (Diseño): Acoplamiento en Tienda -> Desacoplamiento con principios SOLID.
